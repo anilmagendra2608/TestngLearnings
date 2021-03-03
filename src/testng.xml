@@ -3,9 +3,9 @@
 <suite name="TestNG features">
     <test name="TestNG tests">
         <classes>
-            <class name="TestNGAnnotationExecutionSeq">
+            <class name="com.TestngFeatures.TestNGAnnotationExecutionSeq">
             </class>
-            <class name="TestNGFeatures">
+            <class name="com.TestngFeatures.TestNGFeatures">
             </class>
         </classes>
     </test>
