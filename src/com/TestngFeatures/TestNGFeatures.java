@@ -10,7 +10,7 @@ public class TestNGFeatures {
     @Test
     public void loginTest(){
         System.out.println("loginTest() called");
-        int i = 5/0;
+        //int i = 5/0;
     }
 
     @Test(dependsOnMethods = "loginTest")

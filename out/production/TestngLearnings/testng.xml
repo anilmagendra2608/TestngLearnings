@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG features">
+    <listeners>
+        <listener class-name="com.TestngRetryAnalyzer.AnnotationTransformer"></listener>
+    </listeners>
     <test name="TestNG tests">
+        <parameter name="url" value="https://amazon.com.au">
+        </parameter>
+        <parameter name="email" value="anil.magene@gmail.com">
+        </parameter>
         <classes>
-            <class name="TestNGAnnotationExecutionSeq">
+            <class name="com.TestngFeatures.TestNGAnnotationExecutionSeq">
             </class>
-            <class name="TestNGFeatures">
+            <class name="com.TestngFeatures.TestNGFeatures">
+            </class>
+            <class name="com.TestngRetryAnalyzer.testAnnotationTransformer">
             </class>
         </classes>
     </test>
